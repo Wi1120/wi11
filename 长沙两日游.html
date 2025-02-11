@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>长沙周末游行程表</title>
+    <style>
+        body {
+            font-family: '微软雅黑', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid #4CAF50;
+        }
+
+        .schedule-day {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .time-axis {
+            list-style: none;
+            padding: 0;
+        }
+
+        .time-axis li {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+            border-radius: 8px;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .time-axis li:hover {
+            transform: translateX(10px);
+            background: #e9ecef;
+        }
+
+        .option-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .option {
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .option-1 { background: #3498db; }
+        .option-2 { background: #e67e22; }
+        .option-3 { background: #2ecc71; }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #2c3e50;">✨ 长沙周末游行程表 ✨</h1>
+
+        <!-- 14日行程 -->
+        <div class="card">
+            <h2 class="schedule-day">📅 14日行程（周五）</h2>
+            <ul class="time-axis">
+                <li>⏰ 16:00 碧桂园凤凰郡取车</li>
+                <li>🚗 17:20 到达辉煌国际城（李开心家停留30分钟）</li>
+                <li>🍽 18:30 木马塅地铁站附近晚餐</li>
+                <li>✈️ 20:30 T2航站楼接紫鹰</li>
+            </ul>
+
+            <h3>🌙 晚间方案：</h3>
+            <div class="option-box">
+                <div class="option option-1">
+                    <h3>方案一：夜游市中心</h3>
+                    <p>21:10 到达五一广场<br>逛IFS（迪卡侬）</p>
+                </div>
+                <div class="option option-2">
+                    <h3>方案二：橘子洲夜游</h3>
+                    <p>21:40 到达橘子洲<br>（需先回酒店停车转地铁）</p>
+                </div>
+                <div class="option option-3">
+                    <h3>方案三：酒店休息</h3>
+                    <p>21:10 直接返回酒店休息</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15日行程 -->
+        <div class="card">
+            <h2 class="schedule-day">📅 15日行程（周六）</h2>
+            <h3>🌞 上午方案：</h3>
+            <div class="option-box">
+                <div class="option option-1">
+                    <h3>方案一：购物之旅</h3>
+                    <p>逛宜家 + 迪卡侬</p>
+                </div>
+                <div class="option option-2">
+                    <h3>方案二：自然之趣</h3>
+                    <p>逛花鸟市场</p>
+                </div>
+                <div class="option option-3">
+                    <h3>方案三：经典景点</h3>
+                    <p>橘子洲 + 五一广场</p>
+                </div>
+            </div>
+
+            <ul class="time-axis">
+                <li>🍜 14:00 开始返程浏阳</li>
+                <li>🏨 15:00 到达齐富里酒店</li>
+                <li class="highlight">🚗 16:00 准时还车</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; color: #7f8c8d; margin-top: 30px;">
+            <p>🌟 祝旅途愉快！注意行车安全 🌟</p>
+        </div>
+    </div>
+</body>
+</html>
