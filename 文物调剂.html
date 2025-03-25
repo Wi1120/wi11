@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文物与博物馆学考研调剂信息</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+        }
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tab-btn {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        .tab-btn:hover {
+            background-color: #ddd;
+        }
+        .tab-btn.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+            animation: fadeEffect 1s;
+        }
+        @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e6f7ff;
+        }
+        .search-container {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .search-container input, .search-container select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #2980b9;
+        }
+        .highlight {
+            background-color: #fffde7;
+        }
+        .school-feature {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .stats-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+        .stats-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stat-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .stat-item h4 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+            .tab-btn {
+                border-radius: 0;
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>文物与博物馆学考研调剂信息汇总 (2022-2024)</h1>
+        
+        <div class="stats-card">
+            <h3>数据概览</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h4>文物专业院校</h4>
+                    <div class="stat-value">32所</div>
+                </div>
+                <div class="stat-item">
+                    <h4>博物馆专业院校</h4>
+                    <div class="stat-value">19所</div>
+                </div>
+                <div class="stat-item">
+                    <h4>2023年调剂录取</h4>
+                    <div class="stat-value">246人</div>
+                </div>
+                <div class="stat-item">
+                    <h4>多次调剂院校</h4>
+                    <div class="stat-value">16所</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="搜索院校或专业..." title="输入关键词">
+            <select id="regionFilter">
+                <option value="">所有地区</option>
+                <option value="A区">A区</option>
+                <option value="B区">B区</option>
+            </select>
+            <select id="yearFilter">
+                <option value="">所有年份</option>
+                <option value="2022">2022年</option>
+                <option value="2023">2023年</option>
+                <option value="2024">2024年</option>
+            </select>
+            <button onclick="searchTable()">搜索</button>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'tab24')">2024文物</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab24museum')">2024博物馆</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab23')">2023文博</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab22')">2022文博</button>
+            <button class="tab-btn" onclick="openTab(event, 'tabCompare')">22-24对比</button>
+            <button class="tab-btn" onclick="openTab(event, 'tabSummary')">院校汇总</button>
+        </div>
+        
+        <div id="tab24" class="tab-content" style="display: block;">
+            <h2>2024年文物专业调剂信息</h2>
+            <table id="table24">
+                <thead>
+                    <tr>
+                        <th>院校</th>
+                        <th>城市</th>
+                        <th>统考计划招生</th>
+                        <th>一志愿复试</th>
+                        <th>一志愿拟录取</th>
+                        <th>调剂复试</th>
+                        <th>调剂拟录取</th>
+                        <th>统招实际录取</th>
+                        <th>学费(万/年)</th>
+                        <th>学制(年)</th>
+                        <th>复试比例</th>
+                        <th>复试要求</th>
+                        <th>复试内容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>中国社会科学院大学</td>
+                        <td>北京</td>
+                        <td>20</td>
+                        <td>23</td>
+                        <td>23</td>
+                        <td>26</td>
+                        <td>16</td>
+                        <td>39</td>
+                        <td>7.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>北京联合大学</td>
+                        <td>北京</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>16</td>
+                        <td>1.2</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>分数350±</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>山西大学</td>
+                        <td>太原</td>
+                        <td>25</td>
+                        <td>13</td>
+                        <td>13</td>
+                        <td>22</td>
+                        <td>15</td>
+                        <td>28</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>340</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>辽宁大学</td>
+                        <td>沈阳</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>4</td>
+                        <td>8</td>
+                        <td>2.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>上海大学</td>
+                        <td>上海</td>
+                        <td>29</td>
+                        <td>18</td>
+                        <td>14</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>19</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>河南师范大学</td>
+                        <td>新乡</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="school-feature">安阳师范学院历史与文博学院</td>
+                        <td>安阳</td>
+                        <td>20</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>28</td>
+                        <td>20</td>
+                        <td>28</td>
+                        <td>0.7</td>
+                        <td>3</td>
+                        <td>六四开</td>
+                        <td>本专业优先，综合考虑</td>
+                        <td>专业知识考核（文物综合）+英语能力测试</td>
+                    </tr>
+                    <tr>
+                        <td>安阳师范学院甲骨文信息处理教育部重点实验室</td>
+                        <td>安阳</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>14</td>
+                        <td>0.7</td>
+                        <td>3</td>
+                        <td>六四开</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>内蒙古师范大学</td>
+                        <td>呼和浩特</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>-</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>1.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>广西师范大学</td>
+                        <td>桂林</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>12</td>
+                        <td>51</td>
+                        <td>12</td>
+                        <td>24</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>广西民族大学</td>
+                        <td>南宁</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>17</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>北京城市学院</td>
+                        <td>北京</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2.0</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>大连民族大学</td>
+                        <td>大连</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.5</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>牡丹江师范学院</td>
+                        <td>黑龙江</td>
+                        <td>6</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>0.9</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>江西科技师范大学</td>
+                        <td>南昌</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.2</td>
+                        <td>3</td>
+                        <td>六四开</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>山东师范大学</td>
+                        <td>济南</td>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.0</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>咸阳师范学院</td>
+                        <td>咸阳</td>
+                        <td>15</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>西安文理学院</td>
+                        <td>西安</td>
+                        <td>20</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>浙大城市学院</td>
+                        <td>杭州</td>
+                        <td>7</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.0</td>
+                        <td>3</td>
+                        <td>六四开</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>大理大学</td>
+                        <td>大理</td>
+                        <td>12</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.2</td>
+                        <td>3</td>
+                        <td>五五开</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>新疆大学</td>
+                        <td>乌鲁木齐</td>
+                        <td>10</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>0.6</td>
+                        <td>3</td>
+                        <td>六四开</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>西安建筑科技大学</td>
+                        <td>西安</td>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>1.2</td>
+                        <td>3</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="tab24museum" class="tab-content">
+            <h2>2024年博物馆专业调剂信息</h2>
+            <table id="table24museum">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>院校代码</th>
+                        <th>院校</th>
+                        <th>统考计划招生</th>
+                        <th>一志愿拟录取</th>
+                        <th>调剂复试</th>
+                        <th>调剂拟录取</th>
+                        <th>统招实际录取</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>10008</td>
+                        <td>北京科技大学</td>
+                        <td>8</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10012</td>
+                        <td>北京服装学院</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>-</td>
+                        <td>1</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>11417</td>
+                        <td>北京联合大学</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>10065</td>
+                        <td>天津师范大学</td>
+                        <td>37</td>
+                        <td>25</td>
+                        <td>23</td>
+                        <td>12</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>10075</td>
+                        <td>河北大学</td>
+                        <td>30</td>
+                        <td>6</td>
+                        <td>39</td>
+                        <td>26</td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>10119</td>
+                        <td>太原师范学院</td>
+                        <td>15</td>
+                        <td>18</td>
+                        <td>13</td>
+                        <td>13</td>
+                        <td>31</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>10140</td>
+                        <td>辽宁大学</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>10212</td>
+                        <td>黑龙江大学</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>-</td>
+                        <td>2</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10280</td>
+                        <td>上海大学</td>
+                        <td>12</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>10320</td>
+                        <td>江苏师范大学</td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>15</td>
+                        <td>6</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>10459</td>
+                        <td>郑州大学</td>
+                        <td>15</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>10524</td>
+                        <td>中南民族大学</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>10653</td>
+                        <td>成都体育学院</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>-</td>
+                        <td>10</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>10135</td>
+                        <td>内蒙古师范大学</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>-</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>10138</td>
+                        <td>赤峰学院</td>
+                        <td>17</td>
+                        <td>3</td>
+                        <td>22</td>
+                        <td>15</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>10608</td>
+                        <td>广西民族大学</td>
+                        <td>15</td>
+                        <td>9</td>
+                        <td>20</td>
+                        <td>13</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>10739</td>
+                        <td>天水师范学院</td>
+                        <td>14</td>
+                        <td>7</td>
+                        <td>12</td>
+                        <td>7</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>10742</td>
+                        <td>西北民族大学</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>10757</td>
+                        <td>塔里木大学</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="tab23" class="tab-content">
+            <h2>2023年文博专业调剂信息</h2>
+            <table id="table23">
+                <thead>
+                    <tr>
+                        <th>地区</th>
+                        <th>序号</th>
+                        <th>城市</th>
+                        <th>招生单位</th>
+                        <th>类型</th>
+                        <th>一志愿上线</th>
+                        <th>一志愿拟录取</th>
+                        <th>调剂拟录取</th>
+                        <th>统考实际录取</th>
+                        <th>备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A区</td>
+                        <td>1</td>
+                        <td>北京</td>
+                        <td>北京科技大学</td>
+                        <td>211</td>
+                        <td>28</td>
+                        <td>24</td>
+                        <td>2</td>
+                        <td>26</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>2</td>
+                        <td>北京</td>
+                        <td>北京服装学院</td>
+                        <td></td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>3</td>
+                        <td>北京</td>
+                        <td>北京联合大学</td>
+                        <td></td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>20</td>
+                        <td>26</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>4</td>
+                        <td>保定</td>
+                        <td>河北大学</td>
+                        <td></td>
+                        <td>13</td>
+                        <td>13</td>
+                        <td>18</td>
+                        <td>31</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>5</td>
+                        <td>太原</td>
+                        <td>太原师范学院</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>13</td>
+                        <td>21</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>6</td>
+                        <td>长春</td>
+                        <td>东北师范大学</td>
+                        <td></td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td>0</td>
+                        <td>11</td>
+                        <td>招生计划 13</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>7</td>
+                        <td>上海</td>
+                        <td>上海大学</td>
+                        <td>211</td>
+                        <td>未公布</td>
+                        <td>未公布</td>
+                        <td>未公布</td>
+                        <td>23</td>
+                        <td>有校内调剂</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>8</td>
+                        <td>徐州</td>
+                        <td>江苏师范大学</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>9</td>
+                        <td>宁波</td>
+                        <td>宁波大学</td>
+                        <td>双一流</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>10</td>
+                        <td>福州</td>
+                        <td>厦门大学</td>
+                        <td>985</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>4</td>
+                        <td>12</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>11</td>
+                        <td>福州</td>
+                        <td>福建师范大学</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>12</td>
+                        <td>洛阳</td>
+                        <td>河南科技大学</td>
+                        <td></td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="school-feature">A区</td>
+                        <td>13</td>
+                        <td>安阳</td>
+                        <td>安阳师范学院</td>
+                        <td></td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>34</td>
+                        <td>39</td>
+                        <td>招生计划 5</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>14</td>
+                        <td>武汉</td>
+                        <td>湖北省社会科学院</td>
+                        <td></td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>13</td>
+                        <td>21</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>15</td>
+                        <td>长沙</td>
+                        <td>湖南师范大学</td>
+                        <td>211</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>16</td>
+                        <td>广州</td>
+                        <td>中山大学社会学与人类学学院</td>
+                        <td>985</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>10</td>
+                        <td>学院内调剂</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>17</td>
+                        <td>广州</td>
+                        <td>华南师范大学</td>
+                        <td>211</td>
+                        <td>15</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>20</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>18</td>
+                        <td>南充</td>
+                        <td>西华师范大学</td>
+                        <td></td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>19</td>
+                        <td>成都</td>
+                        <td>成都体育学院</td>
+                        <td></td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>20</td>
+                        <td>成都</td>
+                        <td>四川省社会科学院</td>
+                        <td></td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>21</td>
+                        <td>西安</td>
+                        <td>陕西师范大学</td>
+                        <td>211</td>
+                        <td>13</td>
+                        <td>13</td>
+                        <td>9</td>
+                        <td>22</td>
+                        <td>复试分数线 349</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>22</td>
+                        <td>呼和浩特</td>
+                        <td>内蒙古师范大学</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>限制跨学科报考</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>23</td>
+                        <td>南宁</td>
+                        <td>广西民族大学</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>27</td>
+                        <td>34</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>24</td>
+                        <td>三亚</td>
+                        <td>海南热带海洋学院</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>25</td>
+                        <td>咸阳</td>
+                        <td>西藏民族大学</td>
+                        <td></td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>7</td>
+                        <td>招生计划 10</td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>26</td>
+                        <td>天水</td>
+                        <td>天水师范学院</td>
+                        <td></td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>13</td>
+                        <td>招生计划 15</td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>27</td>
+                        <td>兰州</td>
+                        <td>西北民族大学</td>
+                        <td></td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>28</td>
+                        <td>兰州</td>
+                        <td>西北师范大学</td>
+                        <td></td>
+                        <td>51</td>
+                        <td>40</td>
+                        <td>0</td>
+                        <td>40</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>29</td>
+                        <td>银川</td>
+                        <td>宁夏大学</td>
+                        <td>211</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>30</td>
+                        <td>阿拉尔</td>
+                        <td>塔里木大学</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>31</td>
+                        <td>乌鲁木齐</td>
+                        <td>新疆师范大学</td>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="tab22" class="tab-content">
+            <h2>2022年文博专业调剂信息</h2>
+            <table id="table22">
+                <thead>
+                    <tr>
+                        <th>年份</th>
+                        <th>区域</th>
+                        <th>调剂院校</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>南开大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>北京科技大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>上海大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>首都师范大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>中南民族大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>北京服装学院</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>北京联合大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>曲阜师范大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>湖北省社科院</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>A区</td>
+                        <td>景德镇陶瓷大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>云南大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>西北师范大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>贵州民族大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>广西民族大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>广西师范大学</td>
+                    </tr>
+                    <tr>
+                        <td>2022年</td>
+                        <td>B区</td>
+                        <td>赤峰学院</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="tabCompare" class="tab-content">
+            <h2>2022-2024年调剂院校对比</h2>
+            <table id="tableCompare">
+                <thead>
+                    <tr>
+                        <th>2024年文物</th>
+                        <th>22-24有过调剂</th>
+                        <th>院校特色</th>
+                        <th>学科评估</th>
+                        <th>22-24多次调剂</th>
+                        <th>研究方向</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>中国社会科学院大学</td>
+                        <td>中国社会科学院大学</td>
+                        <td>文博考古领域顶尖，依托社科院考古所</td>
+                        <td>-</td>
+                        <td>安阳师范学院</td>
+                        <td>殷商考古（依托殷墟遗址）</td>
+                    </tr>
+                    <tr>
+                        <td>北京联合大学</td>
+                        <td>山西大学</td>
+                        <td>考古学特色（科技考古），学科实力强</td>
+                        <td>B+</td>
+                        <td>北京服装学院</td>
+                        <td>纺织服饰考古与修复</td>
+                    </tr>
+                    <tr>
+                        <td>山西大学</td>
+                        <td>河南师范大学</td>
+                        <td>侧重殷商文化研究，依托中原文化资源</td>
+                        <td>-</td>
+                        <td>北京联合大学</td>
+                        <td>文化遗产保护与数字化技术</td>
+                    </tr>
+                    <tr>
+                        <td>辽宁大学</td>
+                        <td>天津师范大学</td>
+                        <td>文物与博物馆学（历史文献与文物保护方向）</td>
+                        <td>-</td>
+                        <td>成都体育学院</td>
+                        <td>体育文物与运动考古</td>
+                    </tr>
+                    <tr>
+                        <td>上海大学</td>
+                        <td>辽宁大学</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>赤峰学院</td>
+                        <td>红山文化研究与西辽河流域考古</td>
+                    </tr>
+                    <tr>
+                        <td>河南师范大学</td>
+                        <td>黑龙江大学</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>河北大学</td>
+                        <td>考古学硕士点（宋元考古方向）</td>
+                    </tr>
+                    <tr>
+                        <td>安阳师范学院</td>
+                        <td>郑州大学</td>
+                        <td>考古学优势（中原考古、科技考古）</td>
+                        <td>B+</td>
+                        <td>湖北省社科院</td>
+                        <td>楚文化、长江中游考古研究</td>
+                    </tr>
+                    <tr>
+                        <td>内蒙古师范大学</td>
+                        <td>河北大学</td>
+                        <td>考古学硕士点（宋元考古方向）</td>
+                        <td>C+</td>
+                        <td>江苏师范大学</td>
+                        <td>文物鉴定与修复技术</td>
+                    </tr>
+                    <tr>
+                        <td>广西师范大学</td>
+                        <td>太原师范学院</td>
+                        <td>区域考古（晋文化、北朝考古）</td>
+                        <td>-</td>
+                        <td>辽宁大学</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>广西民族大学</td>
+                        <td>东北师范大学</td>
+                        <td>考古学（东北亚考古）</td>
+                        <td>B-</td>
+                        <td>内蒙古师范大学</td>
+                        <td>北方民族与草原考古</td>
+                    </tr>
+                    <tr>
+                        <td>2024年博物馆</td>
+                        <td>江苏师范大学</td>
+                        <td>文物鉴定与修复技术</td>
+                        <td>-</td>
+                        <td>曲阜师范大学</td>
+                        <td>儒学文化遗产与鲁国考古</td>
+                    </tr>
+                    <tr>
+                        <td>北京科技大学</td>
+                        <td>宁波大学</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>塔里木大学</td>
+                        <td>西域文化与绿洲文明研究</td>
+                    </tr>
+                    <tr>
+                        <td>北京服装学院</td>
+                        <td>福建师范大学</td>
+                        <td>涉台文物与海洋文化研究</td>
+                        <td>-</td>
+                        <td>太原师范学院</td>
+                        <td>区域考古（晋文化、北朝考古）</td>
+                    </tr>
+                    <tr>
+                        <td>北京联合大学</td>
+                        <td>河南科技大学</td>
+                        <td>文化遗产保护（洛阳地区遗存）</td>
+                        <td>-</td>
+                        <td>天水师范学院</td>
+                        <td>陇右文化与早期秦文化研究</td>
+                    </tr>
+                    <tr>
+                        <td>天津师范大学</td>
+                        <td>安阳师范学院</td>
+                        <td>殷商考古（依托殷墟遗址）</td>
+                        <td>-</td>
+                        <td>西北民族大学</td>
+                        <td>民族考古与丝绸之路多元文化</td>
+                    </tr>
+                    <tr>
+                        <td>河北大学</td>
+                        <td>湖北省社科院</td>
+                        <td>楚文化、长江中游考古研究</td>
+                        <td>-</td>
+                        <td>中南民族大学</td>
+                        <td>民族文物与南方少数民族文化</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="tabSummary" class="tab-content">
+            <h2>2024年文物招生院校汇总</h2>
+            <table id="tableSummary">
+                <thead>
+                    <tr>
+                        <th>地区</th>
+                        <th>序号</th>
+                        <th>院校代码</th>
+                        <th>招生单位</th>
+                        <th>院系所</th>
+                        <th>招生计划</th>
+                        <th>备注</th>
+                        <th>预计调剂名额</th>
+                        <th>分数线</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A区</td>
+                        <td>1</td>
+                        <td>11417</td>
+                        <td>北京联合大学</td>
+                        <td>应用文理学院</td>
+                        <td>8</td>
+                        <td>24 实收 16 人</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>2</td>
+                        <td>11418</td>
+                        <td>北京城市学院</td>
+                        <td>-</td>
+                        <td>15</td>
+                        <td>25 新增院校</td>
+                        <td>有</td>
+                        <td>民办</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>3</td>
+                        <td>14596</td>
+                        <td>中国社会科学院大学</td>
+                        <td>历史学院</td>
+                        <td>45</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>4</td>
+                        <td>10165</td>
+                        <td>辽宁师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>5</td>
+                        <td>12026</td>
+                        <td>大连民族大学</td>
+                        <td>-</td>
+                        <td>10</td>
+                        <td></td>
+                        <td>11</td>
+                        <td>266</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>6</td>
+                        <td>10212</td>
+                        <td>黑龙江大学</td>
+                        <td>历史文化旅游学院</td>
+                        <td>18</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>7</td>
+                        <td>10233</td>
+                        <td>牡丹江师范学院</td>
+                        <td>-</td>
+                        <td>6</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>276</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>8</td>
+                        <td>10408</td>
+                        <td>景德镇陶瓷大学</td>
+                        <td>考古文博学院</td>
+                        <td>42</td>
+                        <td>另有非全招生</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>9</td>
+                        <td>11318</td>
+                        <td>江西科技师范大学</td>
+                        <td>旅游与历史文化学院</td>
+                        <td>10</td>
+                        <td>25 新增院校</td>
+                        <td>3</td>
+                        <td>301</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>10</td>
+                        <td>10445</td>
+                        <td>山东师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>5</td>
+                        <td>25 新增院校</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>11</td>
+                        <td>10446</td>
+                        <td>曲阜师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>14</td>
+                        <td>另有非全招生</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>12</td>
+                        <td>10464</td>
+                        <td>河南科技大学</td>
+                        <td>人文学院</td>
+                        <td>6</td>
+                        <td>另有非全招生</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>13</td>
+                        <td>10476</td>
+                        <td>河南师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>14</td>
+                        <td>10479</td>
+                        <td>安阳师范学院</td>
+                        <td>历史与文博学院</td>
+                        <td>20</td>
+                        <td></td>
+                        <td>6</td>
+                        <td>266</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>15</td>
+                        <td>10523</td>
+                        <td>湖北美术学院</td>
+                        <td>艺术人文学院</td>
+                        <td>3</td>
+                        <td>另有非全招生</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>16</td>
+                        <td>88701</td>
+                        <td>湖北省社会科学院</td>
+                        <td>楚文化研究所</td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>17</td>
+                        <td>10637</td>
+                        <td>重庆师范大学</td>
+                        <td>历史与社会学院</td>
+                        <td>29</td>
+                        <td></td>
+                        <td></td>
+                        <td>295</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>18</td>
+                        <td>10656</td>
+                        <td>西南民族大学</td>
+                        <td>旅游与历史文化学院</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>19</td>
+                        <td>10703</td>
+                        <td>西安建筑科技大学</td>
+                        <td>未来技术学院</td>
+                        <td>5</td>
+                        <td>25 新增院校</td>
+                        <td>4</td>
+                        <td>266</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>20</td>
+                        <td>10722</td>
+                        <td>咸阳师范学院</td>
+                        <td>历史文化学院</td>
+                        <td>15</td>
+                        <td>25 新增院校</td>
+                        <td>6</td>
+                        <td>266</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>21</td>
+                        <td>11080</td>
+                        <td>西安文理学院</td>
+                        <td>历史文化旅游学院</td>
+                        <td>20</td>
+                        <td>25 新增院校</td>
+                        <td>8</td>
+                        <td>266</td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>22</td>
+                        <td>13021</td>
+                        <td>浙大城市学院</td>
+                        <td>艺术与考古学院</td>
+                        <td>7</td>
+                        <td>25 新增院校</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>23</td>
+                        <td>10135</td>
+                        <td>内蒙古师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>24</td>
+                        <td>10138</td>
+                        <td>赤峰学院</td>
+                        <td>-</td>
+                        <td>15</td>
+                        <td>含 1 专项</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>A区</td>
+                        <td>25</td>
+                        <td>10602</td>
+                        <td>广西师范大学</td>
+                        <td>历史文化与旅游学院</td>
+                        <td>20</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>26</td>
+                        <td>10608</td>
+                        <td>广西民族大学</td>
+                        <td>民族学与社会学学院</td>
+                        <td>20</td>
+                        <td></td>
+                        <td>7</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>27</td>
+                        <td>10672</td>
+                        <td>贵州民族大学</td>
+                        <td>民族学与历史学院</td>
+                        <td>30</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>28</td>
+                        <td>10679</td>
+                        <td>大理大学</td>
+                        <td>民族文化研究院</td>
+                        <td>12</td>
+                        <td>25 新增院校</td>
+                        <td>10</td>
+                        <td>256</td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>29</td>
+                        <td>10695</td>
+                        <td>西藏民族大学</td>
+                        <td>民族研究院</td>
+                        <td>16</td>
+                        <td>25 新增院校</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>30</td>
+                        <td>10736</td>
+                        <td>西北师范大学</td>
+                        <td>历史文化学院</td>
+                        <td>27</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>B区</td>
+                        <td>31</td>
+                        <td>10762</td>
+                        <td>新疆师范大学</td>
+                        <td>历史与社会学院</td>
+                        <td>8</td>
+                        <td>另有非全招生</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="footer">
+            <p>数据更新时间: 2024年3月 | 数据来源: 各高校研究生招生信息网</p>
+            <p>© 2024 文物与博物馆学考研调剂信息网 | 仅供考生参考，请以官方公布信息为准</p>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            tabbuttons = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        function searchTable() {
+            var input, filter, table, tr, td, i, j, txtValue, regionFilter, yearFilter;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            regionFilter = document.getElementById("regionFilter").value;
+            yearFilter = document.getElementById("yearFilter").value;
+            
+            var activeTab = document.querySelector(".tab-content[style='display: block;']");
+            if (!activeTab) return;
+            
+            table = activeTab.getElementsByTagName("table")[0];
+            if (!table) return;
+            
+            tr = table.getElementsByTagName("tr");
+            
+            for (i = 0; i < tr.length; i++) {
+                var matchFound = false;
+                var regionMatch = true;
+                var yearMatch = true;
+                
+                // Skip header row
+                if (i === 0) continue;
+                
+                // Check region filter if applicable
+                if (regionFilter && activeTab.id !== "tab22") {
+                    var regionCell = tr[i].getElementsByTagName("td")[0] || tr[i].getElementsByTagName("td")[1];
+                    if (regionCell) {
+                        var regionText = regionCell.textContent || regionCell.innerText;
+                        regionMatch = regionText.includes(regionFilter);
+                    }
+                }
+                
+                // Check year filter if applicable
+                if (yearFilter && (activeTab.id === "tab22" || activeTab.id === "tab23" || activeTab.id === "tabCompare")) {
+                    var yearCell = tr[i].getElementsByTagName("td")[0];
+                    if (yearCell) {
+                        var yearText = yearCell.textContent || yearCell.innerText;
+                        yearMatch = yearText.includes(yearFilter);
+                    }
+                }
+                
+                // Only proceed if region and year match
+                if (regionMatch && yearMatch) {
+                    // Check all cells for search filter
+                    var cells = tr[i].getElementsByTagName("td");
+                    for (j = 0; j < cells.length; j++) {
+                        td = cells[j];
+                        if (td) {
+                            txtValue = td.textContent || td.innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                matchFound = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+                
+                if (matchFound && regionMatch && yearMatch) {
+                    tr[i].style.display = "";
+                    // Highlight matching text
+                    if (filter) {
+                        highlightText(tr[i], filter);
+                    } else {
+                        removeHighlight(tr[i]);
+                    }
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+        
+        function highlightText(row, filter) {
+            var cells = row.getElementsByTagName("td");
+            for (var i = 0; i < cells.length; i++) {
+                var cell = cells[i];
+                var text = cell.textContent || cell.innerText;
+                var regex = new RegExp(filter, "gi");
+                var newText = text.replace(regex, function(match) {
+                    return "<span class='highlight'>" + match + "</span>";
+                });
+                if (newText !== text) {
+                    cell.innerHTML = newText;
+                }
+            }
+        }
+        
+        function removeHighlight(row) {
+            var highlights = row.getElementsByClassName("highlight");
+            while (highlights.length > 0) {
+                var parent = highlights[0].parentNode;
+                parent.textContent = parent.textContent;
+            }
+        }
+        
+        // Add event listeners for search
+        document.getElementById("searchInput").addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                searchTable();
+            }
+        });
+        
+        document.getElementById("regionFilter").addEventListener("change", searchTable);
+        document.getElementById("yearFilter").addEventListener("change", searchTable);
+    </script>
+</body>
+</html>
